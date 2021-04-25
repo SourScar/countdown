@@ -10,7 +10,7 @@ $(document).ready(() => {
               const data = {
                   password: password
               };
-              fetch('https://sourscarcountdown.herokuapp.com/', {
+              fetch('https://sourscar.herokuapp.com/', {
                       method: 'POST',
                       mode: 'cors',
                       headers: {
