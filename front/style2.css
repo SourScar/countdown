@@ -81,6 +81,10 @@ body {
 	font-size: 1.8rem;
 }
 
+.margin-shift{
+	margin-left: 100px;
+}
+
 #admin-body{
     font-family: 'Montserrat';
     background: black;
