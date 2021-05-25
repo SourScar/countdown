@@ -16,7 +16,7 @@ body {
 }
 .pomodoro-timer .timer #time-left {
 	font-size: 5.4rem;
-	text-align: center;
+	text-align: right;
 	font-weight: bolder;
     color: white;
 }
@@ -79,10 +79,6 @@ body {
 .pomodoro-timer .duration-setting .setting #break-length, .pomodoro-timer .duration-setting .setting #session-length {
 	margin: 0 0.5rem;
 	font-size: 1.8rem;
-}
-
-.margin-shift{
-	margin-left: 100px;
 }
 
 #admin-body{
