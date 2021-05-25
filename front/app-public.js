@@ -166,7 +166,7 @@ $(document).ready(() => {
           let min = parseInt(time[0]);
           let sec = parseInt(time[1]);
           if (min >= 60) {
-              $("#time-left").css("color", "lightgreen");
+              $("#time-left").css("color", "#3C7A7A");
               if (sec === 4 && min === 60) {
                   counter60Beep.trigger("play");
               }
@@ -190,11 +190,11 @@ $(document).ready(() => {
           }
           setTimer(min, sec);
       } else {
-          $("#time-left").css("color", "lightgreen");
+          $("#time-left").css("color", "#3C7A7A");
           setTimer(62, 0);
       }
   })
-  $("#time-left").css("color", "lightgreen");
+  $("#time-left").css("color", "#3C7A7A");
   breakLength.text('5');
   sessionLength.text('62');
 });

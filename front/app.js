@@ -164,7 +164,7 @@ $( document ).ready(() => {
   
         setTimer(min, sec);
         if(min >= 60){
-          $("#time-left").css("color", "lightgreen");
+          $("#time-left").css("color", "#3C7A7A");
         }else{
           $("#time-left").css("color", "red");
         }
@@ -205,13 +205,13 @@ $( document ).ready(() => {
     if(localStorage.length != 0){
       const time = localStorage.getItem("timer").split("-")
       if(time[0] >= 60){
-        $("#time-left").css("color", "lightgreen");
+        $("#time-left").css("color", "#3C7A7A");
       }else{
         $("#time-left").css("color", "red");
       }
       setTimer(time[0], time[1]);
     }else{
-      $("#time-left").css("color", "lightgreen");
+      $("#time-left").css("color", "#3C7A7A");
       setTimer(62, 0);
     }
     breakLength.text('5');

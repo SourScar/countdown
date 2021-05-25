@@ -1,0 +1,166 @@
+body {
+    background-color: #000015;
+}
+.pomodoro-timer {
+	width: 500px;
+	min-width: 300px;
+}
+.pomodoro-timer .timer #timer-label {
+	color: #f79415;
+	font-weight: bolder;
+}
+.pomodoro-timer .timer #time-left {
+	font-size: 5.4rem;
+	text-align: center;
+	font-weight: bolder;
+    color: white;
+}
+.pomodoro-timer .controls {
+	margin: 1rem 0 2.5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+.pomodoro-timer .controls #start_stop {
+	font-size: 1.8rem;
+	width: 4rem;
+	height: 4rem;
+	background-color: #f79415;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pomodoro-timer .controls #start_stop:hover {
+	opacity: 0.8;
+	color: white;
+}
+.pomodoro-timer .controls #start_stop.active .fa-play {
+	display: none;
+}
+.pomodoro-timer .controls #start_stop.active .fa-pause {
+	display: block;
+}
+.pomodoro-timer .controls #start_stop .fa-play {
+	display: block;
+}
+.pomodoro-timer .controls #start_stop .fa-pause {
+	display: none;
+}
+.pomodoro-timer .duration-setting {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+}
+.pomodoro-timer .duration-setting .setting {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-basis: 45%;
+	padding: 0.5rem;
+	border-radius: 10px;
+	background-color: rgba(61, 67, 102, 0.8);
+}
+.pomodoro-timer .duration-setting .setting .label {
+	flex-basis: 100%;
+	text-align: center;
+	font-size: 0.9rem;
+	color: #f79415;
+	margin-bottom: 0.5rem;
+}
+.pomodoro-timer .duration-setting .setting #break-length, .pomodoro-timer .duration-setting .setting #session-length {
+	margin: 0 0.5rem;
+	font-size: 1.8rem;
+}
+
+#admin-body{
+	min-width: 1200px;
+    min-height: 1200px;
+    position: relative;
+    font-family: 'Montserrat';
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+.pomodoro-timer-admin{
+	width: 500px;
+	min-width: 300px;
+	padding: 2rem;
+    background-color: black;
+    border: 2px solid white;
+}
+.pomodoro-timer-admin .timer #timer-label {
+	color: #f79415;
+	font-weight: bolder;
+}
+.pomodoro-timer-admin .timer #time-left {
+	font-size: 5.4rem;
+	text-align: center;
+	font-weight: bolder;
+    color: white;
+}
+.pomodoro-timer-admin .controls {
+	margin: 1rem 0 2.5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+.pomodoro-timer-admin .controls #start_stop {
+	font-size: 1.8rem;
+	width: 4rem;
+	height: 4rem;
+	background-color: #f79415;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pomodoro-timer-admin .controls #start_stop:hover {
+	opacity: 0.8;
+	color: white;
+}
+.pomodoro-timer-admin .controls #start_stop.active .fa-play {
+	display: none;
+}
+.pomodoro-timer-admin .controls #start_stop.active .fa-pause {
+	display: block;
+}
+.pomodoro-timer-admin .controls #start_stop .fa-play {
+	display: block;
+}
+.pomodoro-timer-admin .controls #start_stop .fa-pause {
+	display: none;
+}
+.pomodoro-timer-admin .duration-setting {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+}
+.pomodoro-timer-admin .duration-setting .setting {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-basis: 45%;
+	padding: 0.5rem;
+	border-radius: 10px;
+	background-color: rgba(61, 67, 102, 0.8);
+}
+.pomodoro-timer-admin .duration-setting .setting .label {
+	flex-basis: 100%;
+	text-align: center;
+	font-size: 0.9rem;
+	color: #f79415;
+	margin-bottom: 0.5rem;
+}
+.pomodoro-timer-admin .duration-setting .setting #break-length, .pomodoro-timer .duration-setting .setting #session-length {
+	margin: 0 0.5rem;
+	font-size: 1.8rem;
+}
