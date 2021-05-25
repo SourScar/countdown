@@ -154,11 +154,6 @@ $( document ).ready(() => {
             timeLabel.text(MODE.SESSION);
             setTimer(sessionLength.text(), 0);
             return
-          } else if (min === 0 && currentMode === MODE.SESSION) {
-            currentMode = MODE.BREAK;
-            timeLabel.text(MODE.BREAK);
-            setTimer(breakLength.text(), 0);
-            return
           } else {
             sec = 59;
             min--
