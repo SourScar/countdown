@@ -73,6 +73,7 @@ header {
 	font-size: 5.4rem;
 	text-align: center;
 	font-weight: bolder;
+	color: red;
 }
 .pomodoro-timer .controls {
 	margin: 1rem 0 2.5rem 0;
@@ -166,6 +167,7 @@ header {
 	font-size: 5.4rem;
 	text-align: center;
 	font-weight: bolder;
+	color: red;
 }
 .pomodoro-timer-admin .controls {
 	margin: 1rem 0 2.5rem 0;
