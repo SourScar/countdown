@@ -150,11 +150,13 @@ $( document ).ready(() => {
         }
 
         if (sec === 0) {
-          if (min === 0 && currentMode === MODE.BREAK) {
+          if (min === 0) {
             console.log("Time In 1");
             currentMode = MODE.SESSION;
             timeLabel.text(MODE.SESSION);
             setTimer(sessionLength.text(), 0);
+            timeLeft.hide();
+            timeIn.show();
             return
           } else {
             sec = 59;
