@@ -172,8 +172,14 @@ $( document ).ready(() => {
             timeLeft.text('Time In 2');
           }
         }
-        localStorage.setItem("timer", min+'-'+sec)
-        socket.emit('timer', min+'-'+sec);
+        if(min == 0 && sec == 0){
+          localStorage.setItem("timer", min+'-'+sec)
+          socket.emit('timer', 'Time'+'-'+'In4');
+          timeLeft.text('Time'+'-'+'In4');
+        }else{
+          localStorage.setItem("timer", min+'-'+sec)
+          socket.emit('timer', min+'-'+sec);
+        }
       }, 1000);
     });
     const setTimeLength = (element, mode) => {
