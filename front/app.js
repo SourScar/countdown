@@ -174,8 +174,8 @@ $( document ).ready(() => {
           }
         }
         if(min <= 0 && sec <= 0){
-          //localStorage.setItem("timer", 00+'-'+00)
-          socket.disconnect();
+          localStorage.setItem("timer", 00+'-'+00)
+          socket.emit('timer', 00+'-'+00);
           timeLeft.hide();
           timeIn.show();
         }else{
