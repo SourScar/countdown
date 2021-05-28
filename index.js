@@ -38,7 +38,11 @@ io.on('connection', socket => {
         io.emit('buttonStop', 'stopCount');
     });
     socket.on('timer', message => {
-        io.emit('timerTime', message);
+        if(message == 00+'-'+00){
+            socket.disconnect();
+        }else{
+            io.emit('timerTime', message);
+        }
     });
 });
 // API request
