@@ -1,6 +1,4 @@
 $( document ).ready(() => {
-    timeLeft.show();
-    timeIn.hide();
     // API requests
     fetch('https://sourscar.herokuapp.com/admin', {
       method: 'GET',
@@ -228,4 +226,6 @@ $( document ).ready(() => {
     }
     breakLength.text('5');
     sessionLength.text('62');
+    timeLeft.show();
+    timeIn.hide();
 });
