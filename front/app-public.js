@@ -34,6 +34,7 @@ $(document).ready(() => {
 
   const timeLabel = $("#timer-label");
   const timeLeft = $("#time-left");
+  const timeIn = $("#time-in");
   const breakLength = $("#break-length");
   const sessionLength = $("#session-length");
   const beep = $("#beep");
@@ -187,6 +188,10 @@ $(document).ready(() => {
               if (sec === 6 && min === 0) {
                   beep.trigger("play");
               }
+              if (sec <= 0 && min <= 0) {
+                  timeLeft.hide();
+                  timeIn.show();
+              }
           }
           setTimer(min, sec);
       } else {
@@ -197,4 +202,6 @@ $(document).ready(() => {
   $("#time-left").css("color", "#3C7A7A");
   breakLength.text('5');
   sessionLength.text('62');
+  timeLeft.show();
+  timeIn.hide();
 });
