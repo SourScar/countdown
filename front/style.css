@@ -162,7 +162,7 @@ header {
 	text-align: center;
 	font-weight: bolder;
 }
-.pomodoro-timer .timer #time-in {
+.pomodoro-timer-admin .timer #time-in {
 	font-size: 5.4rem;
 	text-align: center;
 	font-weight: bolder;
