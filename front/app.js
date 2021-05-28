@@ -17,6 +17,7 @@ $( document ).ready(() => {
     const socket = io();
     const timeLabel = $("#timer-label");
     const timeLeft = $("#time-left");
+    const timeIn = $("#time-in");
     const breakLength = $("#break-length");
     const sessionLength = $("#session-length");
     const beep = $("#beep");
@@ -173,12 +174,15 @@ $( document ).ready(() => {
           }
         }
         if(min <= 0 && sec <= 0){
-          localStorage.setItem("timer", 'Time In 4')
-          socket.emit('timer', 'Time In 4');
-          timeLeft.text('Time In 4');
+          localStorage.setItem("timer", 00+'-'+00)
+          socket.emit('timer', 00+'-'+00);
+          timeLeft.hide();
+          timeIn.show();
         }else{
           localStorage.setItem("timer", min+'-'+sec)
           socket.emit('timer', min+'-'+sec);
+          timeLeft.show();
+          timeIn.hide();
         }
       }, 1000);
     });
@@ -216,6 +220,8 @@ $( document ).ready(() => {
       const time = localStorage.getItem("timer").split("-")
       if(time[0] >= 60){
         $("#time-left").css("color", "#3C7A7A");
+        timeLeft.show();
+        timeIn.hide();
       }else{
         $("#time-left").css("color", "red");
         if(min == 0 && sec == 0){
@@ -226,6 +232,8 @@ $( document ).ready(() => {
     }else{
       $("#time-left").css("color", "#3C7A7A");
       setTimer(1, 0);
+      timeLeft.show();
+      timeIn.hide();
     }
     breakLength.text('5');
     sessionLength.text('1');
