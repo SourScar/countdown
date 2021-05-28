@@ -173,9 +173,9 @@ $( document ).ready(() => {
           }
         }
         if(min == 0 && sec == 0){
-          localStorage.setItem("timer", 'Time'+'-'+'In4')
-          socket.emit('timer', 'Time'+'-'+'In4');
-          timeLeft.text('Time'+'-'+'In4');
+          localStorage.setItem("timer", 'Time In 4')
+          socket.emit('timer', 'Time In 4');
+          timeLeft.text('Time In 4');
         }else{
           localStorage.setItem("timer", min+'-'+sec)
           socket.emit('timer', min+'-'+sec);
