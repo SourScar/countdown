@@ -213,7 +213,7 @@ $( document ).ready(() => {
       }else{
         $("#time-left").css("color", "red");
         if(min == 0 && sec == 0){
-          timeLeft.text('Time In 2');
+          timeLeft.text('Time In 3');
         }
       }
       setTimer(time[0], time[1]);
