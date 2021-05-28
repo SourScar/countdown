@@ -173,7 +173,7 @@ $( document ).ready(() => {
           }
         }
         if(min == 0 && sec == 0){
-          localStorage.setItem("timer", min+'-'+sec)
+          localStorage.setItem("timer", 'Time'+'-'+'In4')
           socket.emit('timer', 'Time'+'-'+'In4');
           timeLeft.text('Time'+'-'+'In4');
         }else{
