@@ -174,8 +174,8 @@ $( document ).ready(() => {
           }
         }
         if(min <= 0 && sec <= 0){
-          localStorage.setItem("timer", 00+'-'+00)
-          socket.emit('timer', 00+'-'+00);
+          //localStorage.setItem("timer", 00+'-'+00)
+          socket.disconnect();
           timeLeft.hide();
           timeIn.show();
         }else{
@@ -235,6 +235,8 @@ $( document ).ready(() => {
       timeLeft.show();
       timeIn.hide();
     }
+    timeLeft.show();
+    timeIn.hide();
     breakLength.text('5');
     sessionLength.text('1');
 });
