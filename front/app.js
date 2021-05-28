@@ -151,7 +151,7 @@ $( document ).ready(() => {
 
         if (sec === 0) {
           if (min === 0 && currentMode === MODE.BREAK) {
-            timeLeft.text('Time In 1');
+            console.log("Time In 1");
             currentMode = MODE.SESSION;
             timeLabel.text(MODE.SESSION);
             setTimer(sessionLength.text(), 0);
@@ -165,20 +165,23 @@ $( document ).ready(() => {
         }
   
         setTimer(min, sec);
+        console.log("Time In 7");
         if(min >= 60){
           $("#time-left").css("color", "#3C7A7A");
         }else{
           $("#time-left").css("color", "red");
           if(min == 0 && sec == 0){
-            timeLeft.text('Time In 2');
+            console.log("Time In 2");
           }
         }
         if(min <= 0 && sec <= 0){
+          console.log("Time In 5");
           localStorage.setItem("timer", 00+'-'+00)
           socket.emit('timer', 00+'-'+00);
           timeLeft.hide();
           timeIn.show();
         }else{
+          console.log("Time In 6");
           localStorage.setItem("timer", min+'-'+sec)
           socket.emit('timer', min+'-'+sec);
           timeLeft.show();
@@ -225,9 +228,10 @@ $( document ).ready(() => {
       }else{
         $("#time-left").css("color", "red");
         if(min == 0 && sec == 0){
-          timeLeft.text('Time In 3');
+          console.log("Time In 3");
         }
       }
+      console.log("Time In 4");
       setTimer(time[0], time[1]);
     }else{
       $("#time-left").css("color", "#3C7A7A");
