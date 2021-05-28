@@ -20,6 +20,12 @@ body {
 	font-weight: bolder;
     color: white;
 }
+.pomodoro-timer .timer #time-in {
+	font-size: 5.4rem;
+	text-align: right;
+	font-weight: bolder;
+    color: white;
+}
 .pomodoro-timer .controls {
 	margin: 1rem 0 2.5rem 0;
 	display: flex;
@@ -96,6 +102,12 @@ body {
 	font-weight: bolder;
 }
 .pomodoro-timer-admin .timer #time-left {
+	font-size: 5.4rem;
+	text-align: center;
+	font-weight: bolder;
+    color: white;
+}
+.pomodoro-timer-admin .timer #time-in {
 	font-size: 5.4rem;
 	text-align: center;
 	font-weight: bolder;
