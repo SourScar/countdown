@@ -24,7 +24,7 @@ body {
 	font-size: 5.4rem;
 	text-align: right;
 	font-weight: bolder;
-    color: white;
+    	color: red;
 }
 .pomodoro-timer .controls {
 	margin: 1rem 0 2.5rem 0;
@@ -111,7 +111,7 @@ body {
 	font-size: 5.4rem;
 	text-align: center;
 	font-weight: bolder;
-    color: white;
+    	color: red;
 }
 .pomodoro-timer-admin .controls {
 	margin: 1rem 0 2.5rem 0;
