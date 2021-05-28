@@ -159,9 +159,11 @@ $( document ).ready(() => {
           } else {
             sec = 59;
             min--
+            console.log("Time In 8");
           }
         } else {
           sec--;
+          console.log("Time In 9");
         }
   
         setTimer(min, sec);
