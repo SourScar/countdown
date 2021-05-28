@@ -151,7 +151,6 @@ $( document ).ready(() => {
 
         if (sec === 0) {
           if (min <= 0) {
-            console.log("Time In 1");
             currentMode = MODE.SESSION;
             timeLeft.hide();
             timeIn.show();
@@ -159,35 +158,25 @@ $( document ).ready(() => {
           } else {
             sec = 59;
             min--
-            console.log("Time In 8");
           }
         } else {
           sec--;
-          console.log("Time In 9");
         }
   
         setTimer(min, sec);
-        console.log("Time In 7");
         if(min >= 60){
           $("#time-left").css("color", "#3C7A7A");
         }else{
           $("#time-left").css("color", "red");
           if(min == 0 && sec == 0){
-            console.log("Time In 2");
           }
         }
         if(min <= 0 && sec <= 0){
-          console.log("Time In 5");
           localStorage.setItem("timer", 00+'-'+00)
           socket.emit('timer', 00+'-'+00);
-          timeLeft.hide();
-          timeIn.show();
         }else{
-          console.log("Time In 6");
           localStorage.setItem("timer", min+'-'+sec)
           socket.emit('timer', min+'-'+sec);
-          timeLeft.show();
-          timeIn.hide();
         }
       }, 1000);
     });
@@ -225,24 +214,18 @@ $( document ).ready(() => {
       const time = localStorage.getItem("timer").split("-")
       if(time[0] >= 60){
         $("#time-left").css("color", "#3C7A7A");
-        timeLeft.show();
-        timeIn.hide();
       }else{
         $("#time-left").css("color", "red");
         if(min == 0 && sec == 0){
-          console.log("Time In 3");
         }
       }
-      console.log("Time In 4");
       setTimer(time[0], time[1]);
     }else{
       $("#time-left").css("color", "#3C7A7A");
       setTimer(1, 0);
-      timeLeft.show();
-      timeIn.hide();
     }
-    timeLeft.show();
-    timeIn.hide();
     breakLength.text('5');
     sessionLength.text('1');
+    timeLeft.show();
+    timeIn.hide();
 });
