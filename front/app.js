@@ -172,7 +172,7 @@ $( document ).ready(() => {
             timeLeft.text('Time In 2');
           }
         }
-        if(min == 0 && sec == 0){
+        if(min <= 0 && sec <= 0){
           localStorage.setItem("timer", 'Time In 4')
           socket.emit('timer', 'Time In 4');
           timeLeft.text('Time In 4');
