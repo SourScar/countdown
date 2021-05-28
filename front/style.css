@@ -69,6 +69,11 @@ header {
 	text-align: center;
 	font-weight: bolder;
 }
+.pomodoro-timer .timer #time-in {
+	font-size: 5.4rem;
+	text-align: center;
+	font-weight: bolder;
+}
 .pomodoro-timer .controls {
 	margin: 1rem 0 2.5rem 0;
 	display: flex;
@@ -153,6 +158,11 @@ header {
 	font-weight: bolder;
 }
 .pomodoro-timer-admin .timer #time-left {
+	font-size: 5.4rem;
+	text-align: center;
+	font-weight: bolder;
+}
+.pomodoro-timer .timer #time-in {
 	font-size: 5.4rem;
 	text-align: center;
 	font-weight: bolder;
