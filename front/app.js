@@ -224,10 +224,10 @@ $( document ).ready(() => {
       setTimer(time[0], time[1]);
     }else{
       $("#time-left").css("color", "#3C7A7A");
-      setTimer(1, 0);
+      setTimer(62, 0);
     }
     breakLength.text('5');
-    sessionLength.text('1');
+    sessionLength.text('62');
     timeLeft.show();
     timeIn.hide();
 });
