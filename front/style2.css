@@ -6,6 +6,9 @@
 body {
     background-color: #000015;
 }
+a {
+    text-decoration:none
+}
 .pomodoro-timer {
 	width: 500px;
 	min-width: 300px;
