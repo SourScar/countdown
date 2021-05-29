@@ -97,6 +97,8 @@ $( document ).ready(() => {
     // Button Stop
     btnStop.click(() => {
       socket.emit('stop');
+      timeLeft.show();
+      timeIn.hide();
       if (isClockRunning()) {
         btnStartPause.removeClass("active");
         clearInterval(countDownInterval);
@@ -222,10 +224,10 @@ $( document ).ready(() => {
       setTimer(time[0], time[1]);
     }else{
       $("#time-left").css("color", "#3C7A7A");
-      setTimer(62, 0);
+      setTimer(1, 0);
     }
     breakLength.text('5');
-    sessionLength.text('62');
+    sessionLength.text('1');
     timeLeft.show();
     timeIn.hide();
 });
