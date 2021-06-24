@@ -90,8 +90,8 @@ $( document ).ready(() => {
       currentMode = MODE.SESSION;
       timeLabel.text(MODE.SESSION);
       breakLength.text(5);
-      sessionLength.text(62);
-      setTimer(62, 0);
+      sessionLength.text(63);
+      setTimer(63, 0);
     });
   
     // Button Stop
@@ -224,10 +224,10 @@ $( document ).ready(() => {
       setTimer(time[0], time[1]);
     }else{
       $("#time-left").css("color", "#3C7A7A");
-      setTimer(62, 0);
+      setTimer(63, 0);
     }
     breakLength.text('5');
-    sessionLength.text('62');
+    sessionLength.text('63');
     timeLeft.show();
     timeIn.hide();
 });
