@@ -136,7 +136,7 @@ $( document ).ready(() => {
             counter60Beep.trigger("play");
         }
         if (sec === 59 && min === 61) {
-            counterStartBeep.trigger("play");
+//             counterStartBeep.trigger("play");
         }
         if (sec === 2 && min === 30) {
             counter30Beep.trigger("play");
