@@ -172,7 +172,7 @@ $(document).ready(() => {
                   counter60Beep.trigger("play");
               }
               if (sec === 59 && min === 61) {
-                  counterStartBeep.trigger("play");
+//                   counterStartBeep.trigger("play");
               }
           } else {
               $("#time-left").css("color", "red");
