@@ -22,6 +22,7 @@ $( document ).ready(() => {
     const sessionLength = $("#session-length");
     const beep = $("#beep");
     const counterStartBeep = $("#counter-start-beep");
+    const counter63Beep = $("#counter-63-beep");
     const counter60Beep = $("#counter-60-beep");
     const counter30Beep = $("#counter-30-beep");
     const counter15Beep = $("#counter-15-beep");
@@ -132,6 +133,9 @@ $( document ).ready(() => {
         let sec = parseInt(time[1]);
         
         // Counter Start Beep
+        if (sec === 59 && min === 62) {
+            counter63Beep.trigger("play");
+        }
         if (sec === 4 && min === 60) {
             counter60Beep.trigger("play");
         }
