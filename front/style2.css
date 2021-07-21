@@ -25,7 +25,8 @@ a:hover{
 	font-size: 5.4rem;
 	text-align: right;
 	font-weight: bolder;
-    color: white;
+    	color: white;
+	padding-right: 45px;
 }
 .pomodoro-timer .timer #time-in {
 	font-size: 5.4rem;
