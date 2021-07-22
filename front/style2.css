@@ -33,6 +33,7 @@ a:hover{
 	text-align: right;
 	font-weight: bolder;
     	color: red;
+	padding-right: 25px;
 }
 .pomodoro-timer .controls {
 	margin: 1rem 0 2.5rem 0;
