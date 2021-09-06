@@ -15,6 +15,9 @@ a:hover{
 	color: #36abb1;
 }
 .pomodoro-timer {
+	display: flex;
+    justify-content: end;
+    align-items: center;
 	width: 500px;
 	min-width: 300px;
 }
